@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Match Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-title" data-translate="home">Soccer Match Analyst</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="#" id="menu-home" data-translate="home">Home</a>
+            <div class="has-submenu">
+                <a href="#" id="menu-reports" data-translate="reports">Reports</a>
+                <div class="submenu">
+                    <a href="#">Match Reports</a>
+                    <a href="#">Player Reports</a>
+                    <a href="#">Season Analysis</a>
+                </div>
+            </div>
+            <div class="has-submenu">
+                <a href="#" id="menu-analytics" data-translate="analytics">Analytics</a>
+                <div class="submenu">
+                    <a href="#">Tactical Breakdown</a>
+                    <a href="#">Performance Dashboard</a>
+                    <a href="#">Heatmaps</a>
+                </div>
+            </div>
+            <a href="#" id="menu-contact" data-translate="contact">Contact</a>
+
+            <div class="language-selector">
+                <button id="language-it" onclick="changeLanguage('it')">
+                    <img class="language-flag" src="images/flags/it.png" alt="Italian" />
+                </button>
+                <button id="language-en" onclick="changeLanguage('en')">
+                    <img class="language-flag" src="images/flags/en.png" alt="English" />
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card-content">
+                <h2 id="report-match-title">Match Report: Team A vs Team B</h2>
+                <p id="report-match-description">An in-depth analysis of the tactics, performance, and key players.</p>
+                <a href="#" class="button">Download Report</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2 id="report-player-title">Player Performance Analysis</h2>
+                <p id="report-player-description">Detailed performance metrics of key players.</p>
+                <a href="#" class="button">View Details</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-subscribe">Subscribe for updates</p>
+        <form>
+            <input type="email" placeholder="Your email" id="subscribe-email">
+            <button type="submit" id="subscribe-button">Subscribe</button>
+        </form>
+    </footer>
+</body>
+
+</html>

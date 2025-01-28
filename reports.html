@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Soccer Match Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Soccer Match Analyst</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <div class="has-submenu">
+                <a href="#">Reports</a>
+                <div class="submenu">
+                    <a href="#">Match Reports</a>
+                    <a href="#">Player Reports</a>
+                    <a href="#">Season Analysis</a>
+                </div>
+            </div>
+            <div class="has-submenu">
+                <a href="#">Analytics</a>
+                <div class="submenu">
+                    <a href="#">Tactical Breakdown</a>
+                    <a href="#">Performance Dashboard</a>
+                    <a href="#">Heatmaps</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card-content">
+                <h2>Match Report: Team A vs Team B</h2>
+                <p>An in-depth analysis of the tactics, performance, and key players.</p>
+                <a href="#" class="button">Download Report</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Player Performance Analysis</h2>
+                <p>Detailed performance metrics of key players.</p>
+                <a href="#" class="button">View Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Season Analysis: 2024/25</h2>
+                <p>A comprehensive analysis of team performance throughout the season.</p>
+                <a href="#" class="button">Explore Season Data</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Subscribe for updates</p>
+        <form>
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+</body>
+
+</html>

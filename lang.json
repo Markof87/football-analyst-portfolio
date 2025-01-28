@@ -1,0 +1,24 @@
+{
+    "it": {
+        "home": "Home",
+        "reports": "Report",
+        "analytics": "Analisi",
+        "contact": "Contatto",
+        "subscribe": "Iscriviti per aggiornamenti",
+        "your_email": "La tua email",
+        "download_report": "Scarica il Report",
+        "view_details": "Visualizza Dettagli",
+        "explore_data": "Esplora Dati Stagionali"
+    },
+    "en": {
+        "home": "Home",
+        "reports": "Reports",
+        "analytics": "Analytics",
+        "contact": "Contact",
+        "subscribe": "Subscribe for updates",
+        "your_email": "Your email",
+        "download_report": "Download Report",
+        "view_details": "View Details",
+        "explore_data": "Explore Season Data"
+    }
+}
