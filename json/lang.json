@@ -1,6 +1,7 @@
 {
     "it": {
         "home": "Home",
+        "who": "Chi Sono",
         "reports": "Report",
         "analytics": "Analisi",
         "contact": "Contatti",
@@ -12,6 +13,7 @@
     },
     "en": {
         "home": "Home",
+        "who": "Who I Am",
         "reports": "Reports",
         "analytics": "Analytics",
         "contact": "Contact",

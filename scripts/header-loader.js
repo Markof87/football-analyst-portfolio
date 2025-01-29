@@ -22,6 +22,7 @@ async function loadHeader() {
 
         // Fix navigation links
         document.getElementById('menu-home').href = basePath + 'index.html';
+        document.getElementById('menu-who').href = basePath + 'pages/who.html';
         document.getElementById('menu-match-reports').href = basePath + 'pages/reports.html';
 
         // Function to toggle menu
@@ -32,7 +33,7 @@ async function loadHeader() {
 
         // Toggle submenu visibility when parent menu item is clicked
         document.querySelectorAll('.has-submenu > a').forEach(item => {
-            item.addEventListener('click', function(event) {
+            item.addEventListener('click', function (event) {
                 event.preventDefault(); // Prevent default link behavior
                 const submenu = this.nextElementSibling; // Get the submenu
                 const parent = this.parentElement; // Get the parent .has-submenu
