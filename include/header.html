@@ -1,0 +1,46 @@
+<header>
+    <h1 id="header-title">
+        <img id="header-logo" alt="Doctor XG">
+        Doctor XG
+    </h1>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav id="main-menu">
+        <a href="#" id="menu-home" data-translate="home">Home</a>
+        <div class="has-submenu">
+            <a href="#" id="menu-reports" data-translate="reports">Reports</a>
+            <div class="submenu">
+                <a href="#" id="menu-match-reports">Match Reports</a>
+                <a href="#" id="menu-player-reports">Player Reports</a>
+                <a href="#" id="menu-season-analysis">Season Analysis</a>
+            </div>
+        </div>
+        <div class="has-submenu">
+            <a href="#" id="menu-analytics" data-translate="analytics">Analytics</a>
+            <div class="submenu">
+                <a href="#">Tactical Breakdown</a>
+                <a href="#">Performance Dashboard</a>
+                <a href="#">Heatmaps</a>
+            </div>
+        </div>
+        <a href="#" id="menu-contact" data-translate="contact">Contact</a>
+        <div class="language-selector">
+            <button id="language-it" onclick="changeLanguage('it')">
+                <img class="language-flag" id="flag-it" alt="Italiano" class="flag-icon">
+            </button>
+            <button id="language-en" onclick="changeLanguage('en')">
+                <img class="language-flag" id="flag-en" alt="English" class="flag-icon">
+            </button>
+        </div>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('main-menu');
+    menu.classList.toggle('active');
+}
+</script>

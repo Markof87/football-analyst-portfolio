@@ -1,6 +1,6 @@
 // Funzione per caricare il file lang.json e applicare la lingua
 function loadLanguage(lang) {
-    fetch('lang.json')
+    fetch('json/lang.json')
         .then(response => response.json())
         .then(data => {
             applyTranslations(lang, data);
@@ -10,6 +10,7 @@ function loadLanguage(lang) {
 
 // Funzione per applicare le traduzioni alla pagina
 function applyTranslations(language, translations) {
+    console.log(translations[language]);
     const elements = document.querySelectorAll('[data-translate]');
 
     elements.forEach(element => {
@@ -28,12 +29,6 @@ function changeLanguage(language) {
     // Carica le traduzioni per la lingua selezionata
     loadLanguage(language);
 }
-
-// Inizializza la lingua al primo caricamento (controlla se c'è una lingua nel localStorage)
-document.addEventListener('DOMContentLoaded', function () {
-    const language = localStorage.getItem('language') || 'en'; // Di default usa l'inglese
-    loadLanguage(language);
-});
 
 function toggleMenu() {
     const nav = document.querySelector('nav');
