@@ -70,7 +70,7 @@ nav {
 nav a {
     color: #d4f7d4;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -219,14 +219,14 @@ main {
 }
 
 .card-content h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
     color: #9fff9f;
 }
 
 .card-content p {
     margin: 10px 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #c6f5c6;
 }
 
